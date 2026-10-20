@@ -23,3 +23,10 @@ Governing equations:
 The purpose of __init__.py is to expose a clean public API so users (and your downstream sweep scripts) can import functions directly from src.engine without navigating nested module paths.
 
 2.Physics Module with 6 governing functions:
+
+3.Sweeps and plots
+┌─────────────────────────┬─────────────────────────┬─────────────────────────┐
+│ Panel 1: EM SOA         │ Panel 2: Fatigue SOA    │ Panel 3: Pitch Scaling  │
+│ Contour: log10(MTTF)    │ Contour: log10(N_f)     │ Twin Axis Plot:         │
+│ Overlay: 10-Yr Target   │ Overlay: 3000 Cycles    │ R (mΩ) vs Delay (ps)    │
+└─────────────────────────┴─────────────────────────┴─────────────────────────┘
