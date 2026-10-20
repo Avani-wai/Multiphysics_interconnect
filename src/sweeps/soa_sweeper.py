@@ -22,8 +22,8 @@ def sweep_electromigration_soa():
     return(J_mesh,T_mesh,mttf_hours/8760) #mttf in years
 
 def sweep_fatigue_soa():
-    dnp_range=np.linspace(1,25,100)*1e-3
-    dT_range=np.linspace(30,185,100)
+    dnp_range=np.linspace(0.1,25,100)*1e-3
+    dT_range=np.linspace(0,150,100)
     dnp_mesh,dT_mesh=np.meshgrid(dnp_range,dT_range)
     strain_array=compute_plastic_shear_strain(dnp_mesh,dT_mesh)
     N_f_array=compute_coffin_manson_cycles(strain_array,T_max=125 + 273.15) #125 C
