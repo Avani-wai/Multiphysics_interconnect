@@ -18,3 +18,8 @@ Governing equations:
 1.Electromigration Kinetics & Self-Heating (Black's Law)
 2.Thermo-Mechanical Stress & Fatigue (Coffin-Manson)
 3.Signal Integrity & Interconnect Delay (RC)
+
+1.Package initializer (src/engine/__init__.py)
+The purpose of __init__.py is to expose a clean public API so users (and your downstream sweep scripts) can import functions directly from src.engine without navigating nested module paths.
+
+2.Physics Module with 6 governing functions:
