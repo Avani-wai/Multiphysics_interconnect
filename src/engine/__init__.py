@@ -14,6 +14,11 @@ from .physics import (
     compute_interconnect_parasitics,
     compute_50_percent_rc_delay,
 )
+from .signal_integrity import (
+    generate_prbs_signal,
+    apply_channel_filter,
+    extract_eye_metrics,
+)
 
 __all__ = [
     "compute_joule_heating",
@@ -22,4 +27,7 @@ __all__ = [
     "compute_coffin_manson_cycles",
     "compute_interconnect_parasitics",
     "compute_50_percent_rc_delay",
+    "generate_prbs_signal",
+    "apply_channel_filter",
+    "extract_eye_metrics",
 ]
